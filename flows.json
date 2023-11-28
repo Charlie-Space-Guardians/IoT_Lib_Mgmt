@@ -1,0 +1,19 @@
+[
+    {
+        "id": "8894ccac24dc2cef",
+        "type": "debug",
+        "z": "77c163b0639d1fbd",
+        "name": "table_3_seat_4_debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 900,
+        "wires": []
+    }
+]
