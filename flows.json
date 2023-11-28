@@ -1,5 +1,630 @@
 [
     {
+        "id": "77c163b0639d1fbd",
+        "type": "tab",
+        "label": "Table Occupancy Simulation",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "662c680038b0747f",
+        "type": "inject",
+        "z": "77c163b0639d1fbd",
+        "name": "table_1_seat_1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "table_1_seat_1",
+        "payload": "{   \"Desk ID\": 1,   \"Seat ID\": 1,   \"Start Time\": \"23/11/2023 06:45\",   \"End Time\": \"23/11/2023 08:30\",   \"Duration\": 105,   \"Peak Time Occupancy\": false }",
+        "payloadType": "json",
+        "x": 300,
+        "y": 200,
+        "wires": [
+            [
+                "abf7b14d2e598d1a",
+                "4c80d104d462e6fb"
+            ]
+        ]
+    },
+    {
+        "id": "2a2ca56484979dee",
+        "type": "inject",
+        "z": "77c163b0639d1fbd",
+        "name": "table_1_seat_2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "table_1_seat_2",
+        "payload": "{   \"Desk ID\": 1,   \"Seat ID\": 2,   \"Start Time\": \"23/11/2023 06:45\",   \"End Time\": \"23/11/2023 08:30\",   \"Duration\": 105,   \"Peak Time Occupancy\": false }",
+        "payloadType": "json",
+        "x": 300,
+        "y": 260,
+        "wires": [
+            [
+                "b159abed04c469b6",
+                "4c80d104d462e6fb"
+            ]
+        ]
+    },
+    {
+        "id": "245086c677bbbcd7",
+        "type": "inject",
+        "z": "77c163b0639d1fbd",
+        "name": "table_1_seat_3",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "table_1_seat_3",
+        "payload": "{   \"Desk ID\": 1,   \"Seat ID\": 3,   \"Start Time\": \"23/11/2023 06:45\",   \"End Time\": \"23/11/2023 08:30\",   \"Duration\": 105,   \"Peak Time Occupancy\": false }",
+        "payloadType": "json",
+        "x": 300,
+        "y": 320,
+        "wires": [
+            [
+                "8c07203e3594d8c3",
+                "4c80d104d462e6fb"
+            ]
+        ]
+    },
+    {
+        "id": "cfc093a6b3783daa",
+        "type": "inject",
+        "z": "77c163b0639d1fbd",
+        "name": "table_1_seat_4",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "table_1_seat_4",
+        "payload": "{   \"Desk ID\": 1,   \"Seat ID\": 4,   \"Start Time\": \"23/11/2023 06:45\",   \"End Time\": \"23/11/2023 08:30\",   \"Duration\": 105,   \"Peak Time Occupancy\": false }",
+        "payloadType": "json",
+        "x": 300,
+        "y": 380,
+        "wires": [
+            [
+                "1ee7ac2301a22bf2",
+                "4c80d104d462e6fb"
+            ]
+        ]
+    },
+    {
+        "id": "abf7b14d2e598d1a",
+        "type": "debug",
+        "z": "77c163b0639d1fbd",
+        "name": "table_1_seat_1_debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "b159abed04c469b6",
+        "type": "debug",
+        "z": "77c163b0639d1fbd",
+        "name": "table_1_seat_2_debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8c07203e3594d8c3",
+        "type": "debug",
+        "z": "77c163b0639d1fbd",
+        "name": "table_1_seat_3_debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "1ee7ac2301a22bf2",
+        "type": "debug",
+        "z": "77c163b0639d1fbd",
+        "name": "table_1_seat_4_debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "4c80d104d462e6fb",
+        "type": "function",
+        "z": "77c163b0639d1fbd",
+        "name": "CSV_Write_Function",
+        "func": "// Extract data from the incoming payload\nvar data = msg.payload;\n\n// Create an object that matches the CSV format\nvar csvData = {\n    \"Desk ID\": data[\"Desk ID\"],\n    \"Seat ID\": data[\"Seat ID\"],\n    \"Start Time\": data[\"Start Time\"],\n    \"End Time\": data[\"End Time\"],\n    \"Duration (Minutes)\": data[\"Duration\"],\n    \"Peak Time Occupancy\": data[\"Peak Time Occupancy\"]\n};\n\n// Set the formatted object as the new payload\nmsg.payload = csvData;\n\n// Return the message to be passed to the next node\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 1080,
+        "wires": [
+            [
+                "c94de10a87d2632d"
+            ]
+        ]
+    },
+    {
+        "id": "c94de10a87d2632d",
+        "type": "csv",
+        "z": "77c163b0639d1fbd",
+        "name": "CSV Parser",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "once",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "Desk ID, Seat ID, Start Time, End Time, Duration (Minutes), Peak Time Occupancy",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 830,
+        "y": 1080,
+        "wires": [
+            [
+                "e09a19ac4907bced",
+                "41928b7f79a77ada"
+            ]
+        ]
+    },
+    {
+        "id": "e09a19ac4907bced",
+        "type": "debug",
+        "z": "77c163b0639d1fbd",
+        "name": "CSV_Parser_Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "41928b7f79a77ada",
+        "type": "file",
+        "z": "77c163b0639d1fbd",
+        "name": "WriteToCSV",
+        "filename": "C:\\Users\\wspal\\Documents\\Simulation\\SIMULATION.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "utf8",
+        "x": 1050,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "13bd06f42ef5d1a1",
+        "type": "inject",
+        "z": "77c163b0639d1fbd",
+        "name": "table_2_seat_1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "table_2_seat_1",
+        "payload": "{   \"Desk ID\": 2,   \"Seat ID\": 1,   \"Start Time\": \"23/11/2023 06:45\",   \"End Time\": \"23/11/2023 08:30\",   \"Duration\": 105,   \"Peak Time Occupancy\": false }",
+        "payloadType": "json",
+        "x": 300,
+        "y": 460,
+        "wires": [
+            [
+                "bd0daafb3035aa2b"
+            ]
+        ]
+    },
+    {
+        "id": "7606634cee5fc2c5",
+        "type": "inject",
+        "z": "77c163b0639d1fbd",
+        "name": "table_2_seat_2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "table_2_seat_2",
+        "payload": "{   \"Desk ID\": 2,   \"Seat ID\": 2,   \"Start Time\": \"23/11/2023 06:45\",   \"End Time\": \"23/11/2023 08:30\",   \"Duration\": 105,   \"Peak Time Occupancy\": false }",
+        "payloadType": "json",
+        "x": 300,
+        "y": 520,
+        "wires": [
+            [
+                "1ad95074f58c7726"
+            ]
+        ]
+    },
+    {
+        "id": "7e5733cd93b2c853",
+        "type": "inject",
+        "z": "77c163b0639d1fbd",
+        "name": "table_2_seat_3",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "table_2_seat_3",
+        "payload": "{   \"Desk ID\": 2,   \"Seat ID\": 3,   \"Start Time\": \"23/11/2023 06:45\",   \"End Time\": \"23/11/2023 08:30\",   \"Duration\": 105,   \"Peak Time Occupancy\": false }",
+        "payloadType": "json",
+        "x": 300,
+        "y": 580,
+        "wires": [
+            [
+                "0a6336c5bd952de9"
+            ]
+        ]
+    },
+    {
+        "id": "cb87f23367e8a4d3",
+        "type": "inject",
+        "z": "77c163b0639d1fbd",
+        "name": "table_2_seat_4",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "table_2_seat_4",
+        "payload": "{   \"Desk ID\": 2,   \"Seat ID\": 4,   \"Start Time\": \"23/11/2023 06:45\",   \"End Time\": \"23/11/2023 08:30\",   \"Duration\": 105,   \"Peak Time Occupancy\": false }",
+        "payloadType": "json",
+        "x": 300,
+        "y": 640,
+        "wires": [
+            [
+                "76dcfdc1232c9394"
+            ]
+        ]
+    },
+    {
+        "id": "bd0daafb3035aa2b",
+        "type": "debug",
+        "z": "77c163b0639d1fbd",
+        "name": "table_2_seat_1_debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "1ad95074f58c7726",
+        "type": "debug",
+        "z": "77c163b0639d1fbd",
+        "name": "table_2_seat_2_debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "0a6336c5bd952de9",
+        "type": "debug",
+        "z": "77c163b0639d1fbd",
+        "name": "table_2_seat_3_debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "76dcfdc1232c9394",
+        "type": "debug",
+        "z": "77c163b0639d1fbd",
+        "name": "table_2_seat_4_debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "89c095846847e978",
+        "type": "inject",
+        "z": "77c163b0639d1fbd",
+        "name": "table_3_seat_1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "table_3_seat_1",
+        "payload": "{   \"Desk ID\": 3,   \"Seat ID\": 1,   \"Start Time\": \"23/11/2023 06:45\",   \"End Time\": \"23/11/2023 08:30\",   \"Duration\": 105,   \"Peak Time Occupancy\": false }",
+        "payloadType": "json",
+        "x": 300,
+        "y": 720,
+        "wires": [
+            [
+                "665146974e0e8baa"
+            ]
+        ]
+    },
+    {
+        "id": "862d38c5a4d00e4f",
+        "type": "inject",
+        "z": "77c163b0639d1fbd",
+        "name": "table_3_seat_2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "table_3_seat_2",
+        "payload": "{   \"Desk ID\": 3,   \"Seat ID\": 2,   \"Start Time\": \"23/11/2023 06:45\",   \"End Time\": \"23/11/2023 08:30\",   \"Duration\": 105,   \"Peak Time Occupancy\": false }",
+        "payloadType": "json",
+        "x": 300,
+        "y": 780,
+        "wires": [
+            [
+                "afd8a70aebc5bd26"
+            ]
+        ]
+    },
+    {
+        "id": "5f31428fe1361941",
+        "type": "inject",
+        "z": "77c163b0639d1fbd",
+        "name": "table_3_seat_3",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "table_3_seat_3",
+        "payload": "{   \"Desk ID\": 3,   \"Seat ID\": 3,   \"Start Time\": \"23/11/2023 06:45\",   \"End Time\": \"23/11/2023 08:30\",   \"Duration\": 105,   \"Peak Time Occupancy\": false }",
+        "payloadType": "json",
+        "x": 300,
+        "y": 840,
+        "wires": [
+            [
+                "af453a9566abbbd8"
+            ]
+        ]
+    },
+    {
+        "id": "fab3eb3abdfe69fa",
+        "type": "inject",
+        "z": "77c163b0639d1fbd",
+        "name": "table_3_seat_4",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "table_3_seat_4",
+        "payload": "{   \"Desk ID\": 3,   \"Seat ID\": 4,   \"Start Time\": \"23/11/2023 06:45\",   \"End Time\": \"23/11/2023 08:30\",   \"Duration\": 105,   \"Peak Time Occupancy\": false }",
+        "payloadType": "json",
+        "x": 300,
+        "y": 900,
+        "wires": [
+            [
+                "8894ccac24dc2cef"
+            ]
+        ]
+    },
+    {
+        "id": "665146974e0e8baa",
+        "type": "debug",
+        "z": "77c163b0639d1fbd",
+        "name": "table_3_seat_1_debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "afd8a70aebc5bd26",
+        "type": "debug",
+        "z": "77c163b0639d1fbd",
+        "name": "table_3_seat_2_debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "af453a9566abbbd8",
+        "type": "debug",
+        "z": "77c163b0639d1fbd",
+        "name": "table_3_seat_3_debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 840,
+        "wires": []
+    },
+    {
         "id": "8894ccac24dc2cef",
         "type": "debug",
         "z": "77c163b0639d1fbd",
